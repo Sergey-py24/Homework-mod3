@@ -6,6 +6,7 @@ def send_email (message, recipient, sender = 'chuva@yandex.ru'):
     b = sender.find('@') >= 0 and sender.endswith((".com", ".ru", ".net"))
     if a == False:
         print(f'Невозможно отправить письмо с адреса {sender} на адрес {recipient}.')
+        return
     if b == False:
         print(f'Невозможно отправить письмо с адреса {sender} на адрес {recipient}.')
         return
